@@ -1,0 +1,1823 @@
+{
+ "seed": 800031,
+ "ambient_C": 5.0,
+ "n_segments": 8,
+ "trip_amps": 240.0,
+ "step_seconds": 30.0,
+ "critical_threshold": 3.0,
+ "runs": [
+  {
+   "name": "greedy",
+   "trip": false,
+   "restored": true,
+   "final_t": 240.0,
+   "minutes_to_hospital": 2.5,
+   "minutes_to_critical_all": 4.0,
+   "archetypes": [
+    "school",
+    "bakery",
+    "elderly",
+    "water",
+    "hospital",
+    "warehouse",
+    "residential",
+    "pharmacy"
+   ],
+   "archetype_names": [
+    "School",
+    "Bakery + grocery cluster",
+    "Apartment block, elderly residents",
+    "District water pumping",
+    "Regional hospital",
+    "Light commercial / cold storage",
+    "Mixed residential block",
+    "Pharmacy cluster"
+   ],
+   "icons": [
+    "🏫",
+    "🍞",
+    "🏢",
+    "💧",
+    "🏥",
+    "🏬",
+    "🏘️",
+    "💊"
+   ],
+   "criticality": [
+    1.5,
+    3.5,
+    3.5,
+    4.5,
+    5.0,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "hospital_segment": 4,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 0.0
+    },
+    {
+     "t": 30.0,
+     "action": 0,
+     "trunk_a": 12.220524667084108,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 61.562567072394586
+    },
+    {
+     "t": 60.0,
+     "action": 1,
+     "trunk_a": 31.217976640634493,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 296.0519919091067
+    },
+    {
+     "t": 90.0,
+     "action": 2,
+     "trunk_a": 69.1663082646615,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 747.8851985869213
+    },
+    {
+     "t": 120.0,
+     "action": 3,
+     "trunk_a": 83.55209269236836,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 994.0862189599037
+    },
+    {
+     "t": 150.0,
+     "action": 4,
+     "trunk_a": 104.74292833531433,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 2.5,
+     "t_critical": null,
+     "weighted_load_kw": 1383.320138225744
+    },
+    {
+     "t": 180.0,
+     "action": 5,
+     "trunk_a": 119.0431368587627,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 2.5,
+     "t_critical": null,
+     "weighted_load_kw": 1345.3784132105018
+    },
+    {
+     "t": 210.0,
+     "action": 6,
+     "trunk_a": 143.27763504346933,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 2.5,
+     "t_critical": null,
+     "weighted_load_kw": 1471.7508849653038
+    },
+    {
+     "t": 240.0,
+     "action": 7,
+     "trunk_a": 140.3904634577312,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "t_hospital": 2.5,
+     "t_critical": 4.0,
+     "weighted_load_kw": 1455.8875734206256
+    }
+   ]
+  },
+  {
+   "name": "sequential-d8",
+   "trip": false,
+   "restored": true,
+   "final_t": 1920.0,
+   "minutes_to_hospital": 18.5,
+   "minutes_to_critical_all": 32.0,
+   "archetypes": [
+    "school",
+    "bakery",
+    "elderly",
+    "water",
+    "hospital",
+    "warehouse",
+    "residential",
+    "pharmacy"
+   ],
+   "archetype_names": [
+    "School",
+    "Bakery + grocery cluster",
+    "Apartment block, elderly residents",
+    "District water pumping",
+    "Regional hospital",
+    "Light commercial / cold storage",
+    "Mixed residential block",
+    "Pharmacy cluster"
+   ],
+   "icons": [
+    "🏫",
+    "🍞",
+    "🏢",
+    "💧",
+    "🏥",
+    "🏬",
+    "🏘️",
+    "💊"
+   ],
+   "criticality": [
+    1.5,
+    3.5,
+    3.5,
+    4.5,
+    5.0,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "hospital_segment": 4,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 0.0
+    },
+    {
+     "t": 30.0,
+     "action": 0,
+     "trunk_a": 12.220524667084108,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 61.562567072394586
+    },
+    {
+     "t": 60.0,
+     "action": null,
+     "trunk_a": 10.498219039469179,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 52.89116832938022
+    },
+    {
+     "t": 90.0,
+     "action": null,
+     "trunk_a": 9.32301835716859,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 46.973525293027095
+    },
+    {
+     "t": 120.0,
+     "action": null,
+     "trunk_a": 8.52113450987255,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 42.93513423946042
+    },
+    {
+     "t": 150.0,
+     "action": null,
+     "trunk_a": 7.973970996801969,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 40.179205535863254
+    },
+    {
+     "t": 180.0,
+     "action": null,
+     "trunk_a": 7.600561950108331,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 38.29847062966768
+    },
+    {
+     "t": 210.0,
+     "action": null,
+     "trunk_a": 7.345712510954688,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 37.01499628478875
+    },
+    {
+     "t": 240.0,
+     "action": null,
+     "trunk_a": 7.171855587891313,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 36.13911186932125
+    },
+    {
+     "t": 270.0,
+     "action": null,
+     "trunk_a": 7.053159444441587,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 35.541380007893814
+    },
+    {
+     "t": 300.0,
+     "action": 1,
+     "trunk_a": 27.684050978885438,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 278.2942920277659
+    },
+    {
+     "t": 330.0,
+     "action": null,
+     "trunk_a": 23.83112504675029,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 233.4708338176169
+    },
+    {
+     "t": 360.0,
+     "action": null,
+     "trunk_a": 21.268649457531673,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 203.65845839132152
+    },
+    {
+     "t": 390.0,
+     "action": null,
+     "trunk_a": 19.564393233542276,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 183.82996828758547
+    },
+    {
+     "t": 420.0,
+     "action": null,
+     "trunk_a": 18.43077652670276,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 170.64179644300285
+    },
+    {
+     "t": 450.0,
+     "action": null,
+     "trunk_a": 17.676705570017795,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 161.8701425293511
+    },
+    {
+     "t": 480.0,
+     "action": null,
+     "trunk_a": 17.175120621297282,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 156.03595523273216
+    },
+    {
+     "t": 510.0,
+     "action": null,
+     "trunk_a": 16.84135872506258,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 152.15551243270534
+    },
+    {
+     "t": 540.0,
+     "action": null,
+     "trunk_a": 16.61938597671354,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 149.57453446499778
+    },
+    {
+     "t": 570.0,
+     "action": 2,
+     "trunk_a": 59.35106509859694,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 650.1537899197658
+    },
+    {
+     "t": 600.0,
+     "action": null,
+     "trunk_a": 55.083222209669046,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 600.2524205942991
+    },
+    {
+     "t": 630.0,
+     "action": null,
+     "trunk_a": 51.57790891162719,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 559.2712841892596
+    },
+    {
+     "t": 660.0,
+     "action": null,
+     "trunk_a": 48.69788058763219,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 525.587344086591
+    },
+    {
+     "t": 690.0,
+     "action": null,
+     "trunk_a": 46.329855251596676,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 497.8822179726157
+    },
+    {
+     "t": 720.0,
+     "action": null,
+     "trunk_a": 44.38151493348128,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 475.0819811676657
+    },
+    {
+     "t": 750.0,
+     "action": null,
+     "trunk_a": 42.77774016535786,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 456.3098049447859
+    },
+    {
+     "t": 780.0,
+     "action": null,
+     "trunk_a": 41.45707201047185,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 440.84841398983247
+    },
+    {
+     "t": 810.0,
+     "action": null,
+     "trunk_a": 40.36914588067364,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 428.110132585498
+    },
+    {
+     "t": 840.0,
+     "action": 3,
+     "trunk_a": 61.32148416535888,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 746.2342190868598
+    },
+    {
+     "t": 870.0,
+     "action": null,
+     "trunk_a": 57.785586275543764,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 695.5559876129685
+    },
+    {
+     "t": 900.0,
+     "action": null,
+     "trunk_a": 55.529686032365376,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 663.6910162987203
+    },
+    {
+     "t": 930.0,
+     "action": null,
+     "trunk_a": 54.058432146505794,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 643.2553847423674
+    },
+    {
+     "t": 960.0,
+     "action": null,
+     "trunk_a": 53.07395721682143,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 629.8408852755629
+    },
+    {
+     "t": 990.0,
+     "action": null,
+     "trunk_a": 52.396796825771226,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 620.801552874938
+    },
+    {
+     "t": 1020.0,
+     "action": null,
+     "trunk_a": 51.91752415226642,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 614.5375904035092
+    },
+    {
+     "t": 1050.0,
+     "action": null,
+     "trunk_a": 51.5689481143496,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 610.0723572806485
+    },
+    {
+     "t": 1080.0,
+     "action": null,
+     "trunk_a": 51.308849026132116,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 606.8021098071529
+    },
+    {
+     "t": 1110.0,
+     "action": 4,
+     "trunk_a": 80.71549811652987,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1098.284037605008
+    },
+    {
+     "t": 1140.0,
+     "action": null,
+     "trunk_a": 78.12676347475677,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1055.7896206270625
+    },
+    {
+     "t": 1170.0,
+     "action": null,
+     "trunk_a": 76.26326505118341,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1025.3063072984778
+    },
+    {
+     "t": 1200.0,
+     "action": null,
+     "trunk_a": 74.9220288418345,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1003.4152506744208
+    },
+    {
+     "t": 1230.0,
+     "action": null,
+     "trunk_a": 73.95513206583165,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 987.6763170678422
+    },
+    {
+     "t": 1260.0,
+     "action": null,
+     "trunk_a": 73.25694543070365,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 976.3463852103107
+    },
+    {
+     "t": 1290.0,
+     "action": null,
+     "trunk_a": 72.7518576710811,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 968.1792149061798
+    },
+    {
+     "t": 1320.0,
+     "action": null,
+     "trunk_a": 72.38567617397273,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 962.2830910352382
+    },
+    {
+     "t": 1350.0,
+     "action": null,
+     "trunk_a": 72.1196389811689,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 958.0194561850521
+    },
+    {
+     "t": 1380.0,
+     "action": 5,
+     "trunk_a": 94.61322074079257,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1030.4934399906058
+    },
+    {
+     "t": 1410.0,
+     "action": null,
+     "trunk_a": 92.57643482880013,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1021.9334135842016
+    },
+    {
+     "t": 1440.0,
+     "action": null,
+     "trunk_a": 90.82651316951119,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1014.8259260840167
+    },
+    {
+     "t": 1470.0,
+     "action": null,
+     "trunk_a": 89.32378786506848,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1008.8894684857387
+    },
+    {
+     "t": 1500.0,
+     "action": null,
+     "trunk_a": 88.0312860543677,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1003.9049892102137
+    },
+    {
+     "t": 1530.0,
+     "action": null,
+     "trunk_a": 87.64240828357397,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1002.1110257441547
+    },
+    {
+     "t": 1560.0,
+     "action": null,
+     "trunk_a": 86.63936737773011,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 998.4050016872097
+    },
+    {
+     "t": 1590.0,
+     "action": null,
+     "trunk_a": 85.7736132285736,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 995.2529155639667
+    },
+    {
+     "t": 1620.0,
+     "action": null,
+     "trunk_a": 85.02605248828186,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 992.5642441108379
+    },
+    {
+     "t": 1650.0,
+     "action": 6,
+     "trunk_a": 116.50834768715566,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1203.8899229079452
+    },
+    {
+     "t": 1680.0,
+     "action": null,
+     "trunk_a": 111.0540039063211,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1169.372185264996
+    },
+    {
+     "t": 1710.0,
+     "action": null,
+     "trunk_a": 107.24960003011483,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1145.6353616346419
+    },
+    {
+     "t": 1740.0,
+     "action": null,
+     "trunk_a": 104.58276085690983,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1129.2492098108205
+    },
+    {
+     "t": 1770.0,
+     "action": null,
+     "trunk_a": 102.69807277917704,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1117.883649057812
+    },
+    {
+     "t": 1800.0,
+     "action": null,
+     "trunk_a": 101.35345257407003,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1109.9547185658514
+    },
+    {
+     "t": 1830.0,
+     "action": null,
+     "trunk_a": 100.38371998833951,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1104.3846324103092
+    },
+    {
+     "t": 1860.0,
+     "action": null,
+     "trunk_a": 99.6758214038678,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1100.4391388333213
+    },
+    {
+     "t": 1890.0,
+     "action": null,
+     "trunk_a": 99.1518409735309,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": null,
+     "weighted_load_kw": 1097.6172590437031
+    },
+    {
+     "t": 1920.0,
+     "action": 7,
+     "trunk_a": 106.85229686028799,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "t_hospital": 18.5,
+     "t_critical": 32.0,
+     "weighted_load_kw": 1176.2782740894138
+    }
+   ]
+  },
+  {
+   "name": "priority PPO",
+   "trip": false,
+   "restored": true,
+   "final_t": 240.0,
+   "minutes_to_hospital": 1.0,
+   "minutes_to_critical_all": 2.5,
+   "archetypes": [
+    "school",
+    "bakery",
+    "elderly",
+    "water",
+    "hospital",
+    "warehouse",
+    "residential",
+    "pharmacy"
+   ],
+   "archetype_names": [
+    "School",
+    "Bakery + grocery cluster",
+    "Apartment block, elderly residents",
+    "District water pumping",
+    "Regional hospital",
+    "Light commercial / cold storage",
+    "Mixed residential block",
+    "Pharmacy cluster"
+   ],
+   "icons": [
+    "🏫",
+    "🍞",
+    "🏢",
+    "💧",
+    "🏥",
+    "🏬",
+    "🏘️",
+    "💊"
+   ],
+   "criticality": [
+    1.5,
+    3.5,
+    3.5,
+    4.5,
+    5.0,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "hospital_segment": 4,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 0.0
+    },
+    {
+     "t": 30.0,
+     "action": 3,
+     "trunk_a": 21.75566969171016,
+     "energized": [
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 328.6213682749984
+    },
+    {
+     "t": 60.0,
+     "action": 4,
+     "trunk_a": 48.47340533052813,
+     "energized": [
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": null,
+     "weighted_load_kw": 780.531738347162
+    },
+    {
+     "t": 90.0,
+     "action": 2,
+     "trunk_a": 87.41092447852601,
+     "energized": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": null,
+     "weighted_load_kw": 1217.4823995557415
+    },
+    {
+     "t": 120.0,
+     "action": 7,
+     "trunk_a": 88.59613506045598,
+     "energized": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": null,
+     "weighted_load_kw": 1205.8540559405776
+    },
+    {
+     "t": 150.0,
+     "action": 1,
+     "trunk_a": 102.3852892582336,
+     "energized": [
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": 2.5,
+     "weighted_load_kw": 1361.280465154018
+    },
+    {
+     "t": 180.0,
+     "action": 0,
+     "trunk_a": 105.78168684373115,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      true
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": 2.5,
+     "weighted_load_kw": 1314.8494588284086
+    },
+    {
+     "t": 210.0,
+     "action": 6,
+     "trunk_a": 129.8899443821263,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": 2.5,
+     "weighted_load_kw": 1443.3051806176397
+    },
+    {
+     "t": 240.0,
+     "action": 5,
+     "trunk_a": 142.04378145935402,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "t_hospital": 1.0,
+     "t_critical": 2.5,
+     "weighted_load_kw": 1425.4139093928757
+    }
+   ]
+  }
+ ]
+}

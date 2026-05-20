@@ -91,9 +91,18 @@ def main():
     ap.add_argument("--model", type=str, default="results/policy_priority_s1.zip")
     ap.add_argument("--seed", type=int, default=500042)
     ap.add_argument("--out", type=str, default="results/trace_priority.json")
+    ap.add_argument("--ambient", type=float, default=None,
+                    help="Force ambient °C (else sampled in [-5, 5])")
+    ap.add_argument("--outage", type=float, default=None,
+                    help="Force outage duration in hours (else sampled in [4, 12])")
     args = ap.parse_args()
 
-    env = PriorityRestorationEnv(seed=0)
+    kw = {"seed": 0}
+    if args.ambient is not None:
+        kw["ambient_C_range"] = (args.ambient, args.ambient)
+    if args.outage is not None:
+        kw["outage_hours_range"] = (args.outage, args.outage)
+    env = PriorityRestorationEnv(**kw)
     model = MaskablePPO.load(args.model)
 
     runs = []
