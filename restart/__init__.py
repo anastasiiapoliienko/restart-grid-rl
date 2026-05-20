@@ -11,3 +11,10 @@ __all__ = [
     "GreedyPolicy",
     "SequentialPolicy",
 ]
+
+# Phase 1: 6-feeder Vinnytsia env. Importable only if vinnytsia-twin is installed.
+try:
+    from .vinnytsia_env import VinnytsiaRestorationEnv
+    __all__.append("VinnytsiaRestorationEnv")
+except ImportError:
+    pass
