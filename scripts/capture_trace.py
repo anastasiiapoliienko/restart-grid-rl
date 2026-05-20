@@ -18,14 +18,15 @@ from sb3_contrib import MaskablePPO
 
 from restart.env import RestorationEnv
 from restart.baselines import GreedyPolicy, SequentialPolicy
+from restart.shield import SafetyShield
 
 
-def run_one(env: RestorationEnv, policy, seed: int, masked: bool, name: str):
+def run_one(env: RestorationEnv, policy, seed: int, masked: bool, name: str,
+            shielded: bool = False):
     obs, _ = env.reset(seed=seed)
     if hasattr(policy, "reset"):
         policy.reset()
     steps = []
-    # initial state (t=0, nothing energized)
     steps.append({
         "t": 0.0,
         "action": None,
@@ -33,10 +34,22 @@ def run_one(env: RestorationEnv, policy, seed: int, masked: bool, name: str):
         "energized": [bool(x) for x in env.energized],
         "n_energized": int(env.energized.sum()),
         "trip": False,
+        "shield_veto": False,
     })
     done = trunc = False
     while not (done or trunc):
-        if masked:
+        shield_veto = False
+        if shielded:
+            # SafetyShield.predict already handles masked + forecast veto
+            action, _ = policy.predict(obs, env=env, deterministic=True)
+            # Detect a veto: shield returns N (no-op) when it overrode a close.
+            # We can't easily know the original action from this trace, but the
+            # shield's stats track it; we record an explicit veto flag when the
+            # most recent stat counter advanced.
+            cur_overrides = policy.stats.overrides
+            shield_veto = cur_overrides > getattr(policy, "_prev_overrides", 0)
+            policy._prev_overrides = cur_overrides
+        elif masked:
             action, _ = policy.predict(obs, action_masks=env.action_masks(), deterministic=True)
         elif hasattr(policy, "predict"):
             action, _ = policy.predict(obs)
@@ -51,6 +64,7 @@ def run_one(env: RestorationEnv, policy, seed: int, masked: bool, name: str):
             "energized": [bool(x) for x in env.energized],
             "n_energized": int(info["n_energized"]),
             "trip": bool(info["trip"]),
+            "shield_veto": bool(shield_veto),
         })
         if done or trunc:
             break
@@ -77,6 +91,9 @@ def main():
     runs.append(run_one(env, GreedyPolicy(env.N), args.seed, False, "greedy"))
     runs.append(run_one(env, SequentialPolicy(env.N, dwell_steps=8), args.seed, False, "sequential-d8"))
     runs.append(run_one(env, model, args.seed, True, "ppo"))
+    shield = SafetyShield(model, env, threshold_factor=0.95, masked=True)
+    shield._prev_overrides = 0
+    runs.append(run_one(env, shield, args.seed, True, "ppo + shield", shielded=True))
 
     payload = {
         "seed": args.seed,

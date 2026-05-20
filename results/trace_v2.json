@@ -1,0 +1,2129 @@
+{
+ "seed": 10042,
+ "ambient_C": 1.6443628623098006,
+ "n_segments": 8,
+ "trip_amps": 240.0,
+ "step_seconds": 30.0,
+ "runs": [
+  {
+   "name": "greedy",
+   "trip": true,
+   "restored": false,
+   "final_t": 180.0,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 30.0,
+     "action": 0,
+     "trunk_a": 54.467823234028266,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 60.0,
+     "action": 1,
+     "trunk_a": 109.07477763929322,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 90.0,
+     "action": 2,
+     "trunk_a": 155.44829467552236,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 120.0,
+     "action": 3,
+     "trunk_a": 187.03044309297655,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 150.0,
+     "action": 4,
+     "trunk_a": 219.1890084916795,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 180.0,
+     "action": 5,
+     "trunk_a": 255.11734144622045,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": true,
+     "shield_veto": false
+    }
+   ]
+  },
+  {
+   "name": "sequential-d8",
+   "trip": false,
+   "restored": true,
+   "final_t": 1920.0,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 30.0,
+     "action": 0,
+     "trunk_a": 54.467823234028266,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 60.0,
+     "action": null,
+     "trunk_a": 48.230410824008814,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 90.0,
+     "action": null,
+     "trunk_a": 43.273234553986384,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 120.0,
+     "action": null,
+     "trunk_a": 39.33436051986937,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 150.0,
+     "action": null,
+     "trunk_a": 36.20425295476737,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 180.0,
+     "action": null,
+     "trunk_a": 33.71669858303248,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 210.0,
+     "action": null,
+     "trunk_a": 31.739682308466502,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 240.0,
+     "action": null,
+     "trunk_a": 30.168299568802635,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 270.0,
+     "action": null,
+     "trunk_a": 28.9192620046076,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 300.0,
+     "action": 1,
+     "trunk_a": 88.63850306115775,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 330.0,
+     "action": null,
+     "trunk_a": 81.25315921390563,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 360.0,
+     "action": null,
+     "trunk_a": 75.22946846184021,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 390.0,
+     "action": null,
+     "trunk_a": 70.32072686258145,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 420.0,
+     "action": null,
+     "trunk_a": 66.31990826023312,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 450.0,
+     "action": null,
+     "trunk_a": 63.05843167475692,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 480.0,
+     "action": null,
+     "trunk_a": 60.39933080877254,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 510.0,
+     "action": null,
+     "trunk_a": 58.231099892614736,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 540.0,
+     "action": null,
+     "trunk_a": 56.4629381892382,
+     "energized": [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 570.0,
+     "action": 2,
+     "trunk_a": 112.72068608319088,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 600.0,
+     "action": null,
+     "trunk_a": 104.54365953845398,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 630.0,
+     "action": null,
+     "trunk_a": 98.01379124506512,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 660.0,
+     "action": null,
+     "trunk_a": 92.80715863891518,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 690.0,
+     "action": null,
+     "trunk_a": 88.65445494836054,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 720.0,
+     "action": null,
+     "trunk_a": 85.34189275067129,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 750.0,
+     "action": null,
+     "trunk_a": 82.69882613400344,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 780.0,
+     "action": null,
+     "trunk_a": 80.58964851197334,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 810.0,
+     "action": null,
+     "trunk_a": 78.9063023548031,
+     "energized": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 840.0,
+     "action": 3,
+     "trunk_a": 125.26151773927037,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 870.0,
+     "action": null,
+     "trunk_a": 119.54943350482876,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 900.0,
+     "action": null,
+     "trunk_a": 114.96451247080694,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 930.0,
+     "action": null,
+     "trunk_a": 111.2939792470473,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 960.0,
+     "action": null,
+     "trunk_a": 108.3551017325132,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 990.0,
+     "action": null,
+     "trunk_a": 106.00175216078726,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1020.0,
+     "action": null,
+     "trunk_a": 104.11710811322637,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1050.0,
+     "action": null,
+     "trunk_a": 102.60780472320825,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1080.0,
+     "action": null,
+     "trunk_a": 101.39896329644064,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1110.0,
+     "action": 4,
+     "trunk_a": 150.1222710774149,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1140.0,
+     "action": null,
+     "trunk_a": 141.10215303010784,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1170.0,
+     "action": null,
+     "trunk_a": 134.81861146751564,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1200.0,
+     "action": null,
+     "trunk_a": 130.44315930549473,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1230.0,
+     "action": null,
+     "trunk_a": 127.38824252798695,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1260.0,
+     "action": null,
+     "trunk_a": 125.24899898745646,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1290.0,
+     "action": null,
+     "trunk_a": 123.74628677951199,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1320.0,
+     "action": null,
+     "trunk_a": 122.68688681121013,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1350.0,
+     "action": null,
+     "trunk_a": 121.93715513315152,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1380.0,
+     "action": 5,
+     "trunk_a": 179.5483453402723,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1410.0,
+     "action": null,
+     "trunk_a": 171.806940341851,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1440.0,
+     "action": null,
+     "trunk_a": 165.7447289880217,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1470.0,
+     "action": null,
+     "trunk_a": 160.99651023040823,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1500.0,
+     "action": null,
+     "trunk_a": 157.2750985486544,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1530.0,
+     "action": null,
+     "trunk_a": 154.35699533663697,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1560.0,
+     "action": null,
+     "trunk_a": 152.0674440844075,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1590.0,
+     "action": null,
+     "trunk_a": 150.27048414918366,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1620.0,
+     "action": null,
+     "trunk_a": 148.85958641564767,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1650.0,
+     "action": 6,
+     "trunk_a": 203.74560501595982,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1680.0,
+     "action": null,
+     "trunk_a": 194.10572946681253,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1710.0,
+     "action": null,
+     "trunk_a": 187.09201862300054,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1740.0,
+     "action": null,
+     "trunk_a": 181.98852355005045,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1770.0,
+     "action": null,
+     "trunk_a": 178.27165679392402,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1800.0,
+     "action": null,
+     "trunk_a": 175.5622774717924,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1830.0,
+     "action": null,
+     "trunk_a": 173.5854134300478,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1860.0,
+     "action": null,
+     "trunk_a": 172.1417380634724,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1890.0,
+     "action": null,
+     "trunk_a": 171.0864596702605,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 1920.0,
+     "action": 7,
+     "trunk_a": 226.49426513925735,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "shield_veto": false
+    }
+   ]
+  },
+  {
+   "name": "ppo",
+   "trip": false,
+   "restored": true,
+   "final_t": 600.0,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 30.0,
+     "action": 6,
+     "trunk_a": 55.075154074633225,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 60.0,
+     "action": 0,
+     "trunk_a": 101.19344018456526,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 90.0,
+     "action": 3,
+     "trunk_a": 136.43374187841974,
+     "energized": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 120.0,
+     "action": 1,
+     "trunk_a": 183.59269553826857,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 150.0,
+     "action": 5,
+     "trunk_a": 224.3194009216953,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 180.0,
+     "action": null,
+     "trunk_a": 202.90596850010132,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 210.0,
+     "action": null,
+     "trunk_a": 185.96637951795108,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 240.0,
+     "action": 4,
+     "trunk_a": 222.6616623468342,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 270.0,
+     "action": null,
+     "trunk_a": 203.7294238269062,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 300.0,
+     "action": null,
+     "trunk_a": 189.59684728228356,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 330.0,
+     "action": null,
+     "trunk_a": 179.00928440052087,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 360.0,
+     "action": 2,
+     "trunk_a": 229.4562568062996,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 390.0,
+     "action": null,
+     "trunk_a": 216.32276797067883,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 420.0,
+     "action": null,
+     "trunk_a": 206.05004175031695,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 450.0,
+     "action": null,
+     "trunk_a": 198.02465135187023,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 480.0,
+     "action": null,
+     "trunk_a": 191.73862462301358,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 510.0,
+     "action": null,
+     "trunk_a": 186.8034964480815,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 540.0,
+     "action": null,
+     "trunk_a": 182.92078352305816,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 570.0,
+     "action": null,
+     "trunk_a": 179.86077690789764,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 600.0,
+     "action": 7,
+     "trunk_a": 233.67013483063047,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "shield_veto": false
+    }
+   ]
+  },
+  {
+   "name": "ppo + shield",
+   "trip": false,
+   "restored": true,
+   "final_t": 660.0,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 30.0,
+     "action": 6,
+     "trunk_a": 55.075154074633225,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 1,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 60.0,
+     "action": 0,
+     "trunk_a": 101.19344018456526,
+     "energized": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 2,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 90.0,
+     "action": 3,
+     "trunk_a": 136.43374187841974,
+     "energized": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 3,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 120.0,
+     "action": 1,
+     "trunk_a": 183.59269553826857,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 150.0,
+     "action": 5,
+     "trunk_a": 224.3194009216953,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 180.0,
+     "action": null,
+     "trunk_a": 202.90596850010132,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 210.0,
+     "action": null,
+     "trunk_a": 185.96637951795108,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 5,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 240.0,
+     "action": 4,
+     "trunk_a": 222.6616623468342,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 270.0,
+     "action": null,
+     "trunk_a": 203.7294238269062,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 300.0,
+     "action": null,
+     "trunk_a": 189.59684728228356,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 330.0,
+     "action": null,
+     "trunk_a": 179.00928440052087,
+     "energized": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 360.0,
+     "action": 2,
+     "trunk_a": 229.4562568062996,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 390.0,
+     "action": null,
+     "trunk_a": 216.32276797067883,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 420.0,
+     "action": null,
+     "trunk_a": 206.05004175031695,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 450.0,
+     "action": null,
+     "trunk_a": 198.02465135187023,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 480.0,
+     "action": null,
+     "trunk_a": 191.73862462301358,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 510.0,
+     "action": null,
+     "trunk_a": 186.8034964480815,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 540.0,
+     "action": null,
+     "trunk_a": 182.92078352305816,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 570.0,
+     "action": null,
+     "trunk_a": 179.86077690789764,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": false
+    },
+    {
+     "t": 600.0,
+     "action": null,
+     "trunk_a": 177.44497644223262,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": true
+    },
+    {
+     "t": 630.0,
+     "action": null,
+     "trunk_a": 175.53501311056215,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false
+     ],
+     "n_energized": 7,
+     "trip": false,
+     "shield_veto": true
+    },
+    {
+     "t": 660.0,
+     "action": 7,
+     "trunk_a": 230.2266845669178,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "shield_veto": false
+    }
+   ]
+  }
+ ]
+}

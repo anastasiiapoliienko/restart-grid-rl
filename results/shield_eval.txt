@@ -1,0 +1,17 @@
+Held-out scenarios: 1000 (seeds 100000…100999)
+Shield threshold: 228.0 A (95% of trip 240 A)
+
+policy                           trip%    restore%    steps to 99%      peak A
+------------------------------------------------------------------------------
+greedy                          100.0%        0.0%           119.8       256.3
+sequential d=8                    0.3%       99.7%            55.0       224.2
+sequential d=12                   0.0%      100.0%            79.0       221.9
+ppo policy_s1 (bare)              8.3%       91.7%            11.5       232.2
+ppo policy_s1 + shield            0.0%       93.2%            11.7       228.3
+ppo policy_s2 (bare)             11.5%       88.5%            11.5       232.9
+ppo policy_s2 + shield            0.0%       94.0%            11.6       228.6
+ppo policy_s3 (bare)              7.9%       92.1%            11.4       232.2
+ppo policy_s3 + shield            0.0%       96.3%            11.7       228.4
+
+PPO BARE (mean ± std)       9.23 ± 1.6190.77 ± 1.61      11.5 ± 0.0 232.5 ± 0.3
+PPO + SHIELD (mean ± std)   0.00 ± 0.0094.50 ± 1.31      11.7 ± 0.1 228.4 ± 0.1
