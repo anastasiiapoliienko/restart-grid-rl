@@ -1,0 +1,45 @@
+! 8-segment 10 kV radial feeder for Phase-0 restoration RL
+! Eight laterals off a trunk; each lateral has a switch and a load.
+! Loads are rewritten every simulation step by Python (restart.feeder).
+
+Clear
+
+new circuit.feeder8
+~ basekv=10.0
+~ phases=3
+~ pu=1.0
+~ bus1=sourcebus
+~ MVAsc1=2000  MVAsc3=2000
+
+! Trunk feeder line (the upstream protection point we monitor for trip)
+new line.trunk bus1=sourcebus bus2=trunkbus phases=3 length=1.0 units=km
+~ r1=0.20 x1=0.40 r0=0.40 x0=0.60 c1=0 c0=0
+~ normamps=300 emergamps=420
+
+! Eight laterals. Each has a switch (controllable from Python) and a load.
+new line.sw1 bus1=trunkbus bus2=b1 phases=3 switch=yes
+new load.ld1 bus1=b1 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw2 bus1=trunkbus bus2=b2 phases=3 switch=yes
+new load.ld2 bus1=b2 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw3 bus1=trunkbus bus2=b3 phases=3 switch=yes
+new load.ld3 bus1=b3 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw4 bus1=trunkbus bus2=b4 phases=3 switch=yes
+new load.ld4 bus1=b4 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw5 bus1=trunkbus bus2=b5 phases=3 switch=yes
+new load.ld5 bus1=b5 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw6 bus1=trunkbus bus2=b6 phases=3 switch=yes
+new load.ld6 bus1=b6 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw7 bus1=trunkbus bus2=b7 phases=3 switch=yes
+new load.ld7 bus1=b7 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+new line.sw8 bus1=trunkbus bus2=b8 phases=3 switch=yes
+new load.ld8 bus1=b8 phases=3 kV=10.0 kW=200 kvar=50 model=1 vminpu=0.7 vmaxpu=1.2
+
+set voltagebases=[10.0]
+calcv

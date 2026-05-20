@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS
+.DS_Store
+
+# Training artifacts (keep results/policy.zip and results/demo_*.png)
+results/tb/
+results/policy_v*.zip
+results/policy_smoke.zip
+*.log
+
+# Editor
+.vscode/
+.idea/
