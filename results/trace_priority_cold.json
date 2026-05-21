@@ -8,11 +8,11 @@
  "runs": [
   {
    "name": "greedy",
-   "trip": false,
-   "restored": true,
-   "final_t": 240.0,
-   "minutes_to_hospital": 4.0,
-   "minutes_to_critical_all": 4.0,
+   "trip": true,
+   "restored": false,
+   "final_t": 180.0,
+   "minutes_to_hospital": null,
+   "minutes_to_critical_all": null,
    "archetypes": [
     "school",
     "residential",
@@ -78,7 +78,7 @@
     {
      "t": 30.0,
      "action": 0,
-     "trunk_a": 14.960646841894231,
+     "trunk_a": 26.81921556882102,
      "energized": [
       true,
       false,
@@ -93,12 +93,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 75.35527326835971
+     "weighted_load_kw": 134.9983553088433
     },
     {
      "t": 60.0,
      "action": 1,
-     "trunk_a": 45.71860118086713,
+     "trunk_a": 79.91585425968063,
      "energized": [
       true,
       true,
@@ -113,12 +113,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 285.2466683035885
+     "weighted_load_kw": 495.6313570055097
     },
     {
      "t": 90.0,
      "action": 2,
-     "trunk_a": 69.52619228120616,
+     "trunk_a": 122.21065431394888,
      "energized": [
       true,
       true,
@@ -133,12 +133,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 352.4050456389317
+     "weighted_load_kw": 615.4202861361209
     },
     {
      "t": 120.0,
      "action": 3,
-     "trunk_a": 84.55326152411922,
+     "trunk_a": 152.8292577828105,
      "energized": [
       true,
       true,
@@ -153,12 +153,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 582.565519062417
+     "weighted_load_kw": 1058.2318492272416
     },
     {
      "t": 150.0,
      "action": 4,
-     "trunk_a": 96.8513810910745,
+     "trunk_a": 179.95365497891126,
      "energized": [
       true,
       true,
@@ -173,12 +173,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 844.3597789977186
+     "weighted_load_kw": 1590.8221013838415
     },
     {
      "t": 180.0,
      "action": 5,
-     "trunk_a": 132.85610195182448,
+     "trunk_a": 243.118537551265,
      "energized": [
       true,
       true,
@@ -190,50 +190,10 @@
       false
      ],
      "n_energized": 6,
-     "trip": false,
+     "trip": true,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 1287.4770175226777
-    },
-    {
-     "t": 210.0,
-     "action": 6,
-     "trunk_a": 127.14433993098298,
-     "energized": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      false
-     ],
-     "n_energized": 7,
-     "trip": false,
-     "t_hospital": null,
-     "t_critical": null,
-     "weighted_load_kw": 1225.195141263545
-    },
-    {
-     "t": 240.0,
-     "action": 7,
-     "trunk_a": 145.29238424644265,
-     "energized": [
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true,
-      true
-     ],
-     "n_energized": 8,
-     "trip": false,
-     "t_hospital": 4.0,
-     "t_critical": 4.0,
-     "weighted_load_kw": 1604.0167108551705
+     "weighted_load_kw": 2357.406624434725
     }
    ]
   },
@@ -309,7 +269,7 @@
     {
      "t": 30.0,
      "action": 0,
-     "trunk_a": 14.960646841894231,
+     "trunk_a": 26.81921556882102,
      "energized": [
       true,
       false,
@@ -324,12 +284,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 75.35527326835971
+     "weighted_load_kw": 134.9983553088433
     },
     {
      "t": 60.0,
      "action": null,
-     "trunk_a": 12.674173645678012,
+     "trunk_a": 23.355934361540672,
      "energized": [
       true,
       false,
@@ -344,12 +304,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 63.84639403750377
+     "weighted_load_kw": 117.58681250884737
     },
     {
      "t": 90.0,
      "action": null,
-     "trunk_a": 11.075213672699393,
+     "trunk_a": 20.69516304417345,
      "energized": [
       true,
       false,
@@ -364,12 +324,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 55.79645550148409
+     "weighted_load_kw": 104.20620620218548
     },
     {
      "t": 120.0,
      "action": null,
-     "trunk_a": 9.95700607107287,
+     "trunk_a": 18.650909217088913,
      "energized": [
       true,
       false,
@@ -384,12 +344,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 50.165888950750094
+     "weighted_load_kw": 93.92333654551601
     },
     {
      "t": 150.0,
      "action": null,
-     "trunk_a": 9.174914381583894,
+     "trunk_a": 17.080233695232938,
      "energized": [
       true,
       false,
@@ -404,12 +364,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 46.22756326784117
+     "weighted_load_kw": 86.0210482670387
     },
     {
      "t": 180.0,
      "action": null,
-     "trunk_a": 8.627935864433699,
+     "trunk_a": 15.873365476335312,
      "energized": [
       true,
       false,
@@ -424,12 +384,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 43.472883246762635
+     "weighted_load_kw": 79.9482143090922
     },
     {
      "t": 210.0,
      "action": null,
-     "trunk_a": 8.245347988173679,
+     "trunk_a": 14.946018405955181,
      "energized": [
       true,
       false,
@@ -444,12 +404,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 41.54610963038554
+     "weighted_load_kw": 75.28129872955903
     },
     {
      "t": 240.0,
      "action": null,
-     "trunk_a": 7.977782873238175,
+     "trunk_a": 14.23342509269532,
      "energized": [
       true,
       false,
@@ -464,12 +424,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 40.19841895838023
+     "weighted_load_kw": 71.6948181543756
     },
     {
      "t": 270.0,
      "action": null,
-     "trunk_a": 7.7906278976016745,
+     "trunk_a": 13.68579224684961,
      "energized": [
       true,
       false,
@@ -484,12 +444,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 39.25577051646042
+     "weighted_load_kw": 68.93864168257949
     },
     {
      "t": 300.0,
      "action": 1,
-     "trunk_a": 40.68621357539923,
+     "trunk_a": 69.76351137322615,
      "energized": [
       true,
       true,
@@ -504,12 +464,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 259.9967049922566
+     "weighted_load_kw": 444.8650905742506
     },
     {
      "t": 330.0,
      "action": null,
-     "trunk_a": 37.70595127276016,
+     "trunk_a": 64.54437593239692,
      "energized": [
       true,
       true,
@@ -524,12 +484,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 240.1996761756027
+     "weighted_load_kw": 410.5589148929659
     },
     {
      "t": 360.0,
      "action": null,
-     "trunk_a": 35.268416998119704,
+     "trunk_a": 60.140298888590664,
      "energized": [
       true,
       true,
@@ -544,12 +504,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 223.989306466865
+     "weighted_load_kw": 381.5770501635504
     },
     {
      "t": 390.0,
      "action": null,
-     "trunk_a": 33.27388138187048,
+     "trunk_a": 56.42461828116777,
      "energized": [
       true,
       true,
@@ -564,12 +524,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 210.70906656314986
+     "weighted_load_kw": 357.08321378160014
     },
     {
      "t": 420.0,
      "action": null,
-     "trunk_a": 31.64083272205623,
+     "trunk_a": 53.28806341584444,
      "energized": [
       true,
       true,
@@ -584,12 +544,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 199.82459373232868
+     "weighted_load_kw": 336.3747242283257
     },
     {
      "t": 450.0,
      "action": null,
-     "trunk_a": 30.303098624160047,
+     "trunk_a": 50.63902086339208,
      "energized": [
       true,
       true,
@@ -604,12 +564,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 190.90037634336073
+     "weighted_load_kw": 318.8606560260734
     },
     {
      "t": 480.0,
      "action": null,
-     "trunk_a": 29.206773209220167,
+     "trunk_a": 48.40081463343529,
      "energized": [
       true,
       true,
@@ -624,12 +584,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 183.58105600498502
+     "weighted_load_kw": 304.0436765902638
     },
     {
      "t": 510.0,
      "action": null,
-     "trunk_a": 28.307873602480537,
+     "trunk_a": 46.5087602870065,
      "energized": [
       true,
       true,
@@ -644,12 +604,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 177.57638566236628
+     "weighted_load_kw": 291.5049208234928
     },
     {
      "t": 540.0,
      "action": null,
-     "trunk_a": 27.570637920296285,
+     "trunk_a": 44.90891246842548,
      "energized": [
       true,
       true,
@@ -664,12 +624,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 172.64909502784656
+     "weighted_load_kw": 280.891376898129
     },
     {
      "t": 570.0,
      "action": 2,
-     "trunk_a": 55.223906474261156,
+     "trunk_a": 93.27055927183667,
      "energized": [
       true,
       true,
@@ -684,12 +644,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 263.1492437135307
+     "weighted_load_kw": 437.7533264591781
     },
     {
      "t": 600.0,
      "action": null,
-     "trunk_a": 50.481445017798904,
+     "trunk_a": 85.69124210150328,
      "energized": [
       true,
       true,
@@ -704,12 +664,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 245.64135277867928
+     "weighted_load_kw": 408.7254733917596
     },
     {
      "t": 630.0,
      "action": null,
-     "trunk_a": 46.806407291171716,
+     "trunk_a": 79.49125990649875,
      "energized": [
       true,
       true,
@@ -724,12 +684,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 231.99616459057086
+     "weighted_load_kw": 384.87548449202376
     },
     {
      "t": 660.0,
      "action": null,
-     "trunk_a": 43.958062188713754,
+     "trunk_a": 74.4231109977038,
      "energized": [
       true,
       true,
@@ -744,12 +704,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 221.3540941487349
+     "weighted_load_kw": 365.27215678428456
     },
     {
      "t": 690.0,
      "action": null,
-     "trunk_a": 41.749301058114554,
+     "trunk_a": 70.27860159722538,
      "energized": [
       true,
       true,
@@ -764,12 +724,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 213.0482286383518
+     "weighted_load_kw": 349.1529939049983
     },
     {
      "t": 720.0,
      "action": null,
-     "trunk_a": 40.03558974533359,
+     "trunk_a": 66.88822178577134,
      "energized": [
       true,
       true,
@@ -784,12 +744,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 206.56088154058128
+     "weighted_load_kw": 335.8934401386914
     },
     {
      "t": 750.0,
      "action": null,
-     "trunk_a": 38.70524247734336,
+     "trunk_a": 64.11363179140089,
      "energized": [
       true,
       true,
@@ -804,12 +764,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 201.48999200180896
+     "weighted_load_kw": 324.9817579864631
     },
     {
      "t": 780.0,
      "action": null,
-     "trunk_a": 37.67189611339844,
+     "trunk_a": 61.84232974907684,
      "energized": [
       true,
       true,
@@ -824,12 +784,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 197.523129260409
+     "weighted_load_kw": 315.9985086047658
     },
     {
      "t": 810.0,
      "action": null,
-     "trunk_a": 36.868834234177456,
+     "trunk_a": 59.98239453719966,
      "energized": [
       true,
       true,
@@ -844,12 +804,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 194.41737342443062
+     "weighted_load_kw": 308.59978726427687
     },
     {
      "t": 840.0,
      "action": 3,
-     "trunk_a": 58.964295538178284,
+     "trunk_a": 101.52738769189257,
      "energized": [
       true,
       true,
@@ -864,12 +824,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 457.8508241140133
+     "weighted_load_kw": 804.7470840611717
     },
     {
      "t": 870.0,
      "action": null,
-     "trunk_a": 53.91831833220254,
+     "trunk_a": 93.16475787320785,
      "energized": [
       true,
       true,
@@ -884,12 +844,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 402.62952633129714
+     "weighted_load_kw": 716.8959806102307
     },
     {
      "t": 900.0,
      "action": null,
-     "trunk_a": 50.51019123462063,
+     "trunk_a": 86.8164162764031,
      "energized": [
       true,
       true,
@@ -904,12 +864,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 365.70644844526316
+     "weighted_load_kw": 650.785895845439
     },
     {
      "t": 930.0,
      "action": null,
-     "trunk_a": 48.202855982053684,
+     "trunk_a": 81.99608351465007,
      "energized": [
       true,
       true,
@@ -924,12 +884,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 340.99042473555465
+     "weighted_load_kw": 601.0072077228947
     },
     {
      "t": 960.0,
      "action": null,
-     "trunk_a": 46.63601079162463,
+     "trunk_a": 78.33067000475144,
      "energized": [
       true,
       true,
@@ -944,12 +904,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 324.4237156164707
+     "weighted_load_kw": 563.5013000813975
     },
     {
      "t": 990.0,
      "action": null,
-     "trunk_a": 45.56844473833553,
+     "trunk_a": 75.5393311604749,
      "energized": [
       true,
       true,
@@ -964,12 +924,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 313.30197045841203
+     "weighted_load_kw": 535.2223080192337
     },
     {
      "t": 1020.0,
      "action": null,
-     "trunk_a": 44.83824848001118,
+     "trunk_a": 73.41030913605391,
      "energized": [
       true,
       true,
@@ -984,12 +944,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 305.8218730333082
+     "weighted_load_kw": 513.8837000948903
     },
     {
      "t": 1050.0,
      "action": null,
-     "trunk_a": 44.336779473759925,
+     "trunk_a": 71.78390518404787,
      "energized": [
       true,
       true,
@@ -1004,12 +964,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 300.7801837648382
+     "weighted_load_kw": 497.76839400704193
     },
     {
      "t": 1080.0,
      "action": null,
-     "trunk_a": 43.99064906930588,
+     "trunk_a": 70.53931167204996,
      "energized": [
       true,
       true,
@@ -1024,12 +984,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 297.373464888788
+     "weighted_load_kw": 485.5864563849209
     },
     {
      "t": 1110.0,
      "action": 4,
-     "trunk_a": 66.56824735257054,
+     "trunk_a": 113.94428874508162,
      "energized": [
       true,
       true,
@@ -1044,12 +1004,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 638.0844157630607
+     "weighted_load_kw": 1140.6239635202605
     },
     {
      "t": 1140.0,
      "action": null,
-     "trunk_a": 64.03541861965788,
+     "trunk_a": 108.04096386383257,
      "energized": [
       true,
       true,
@@ -1064,12 +1024,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 600.973615581222
+     "weighted_load_kw": 1056.2754177946426
     },
     {
      "t": 1170.0,
      "action": null,
-     "trunk_a": 62.23316298585873,
+     "trunk_a": 103.51570394505822,
      "energized": [
       true,
       true,
@@ -1084,12 +1044,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 574.6037737631932
+     "weighted_load_kw": 991.8077122093216
     },
     {
      "t": 1200.0,
      "action": null,
-     "trunk_a": 60.95104674549576,
+     "trunk_a": 100.05271257291706,
      "energized": [
       true,
       true,
@@ -1104,12 +1064,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 555.8615937138609
+     "weighted_load_kw": 942.5293972580729
     },
     {
      "t": 1230.0,
      "action": null,
-     "trunk_a": 60.038697268344514,
+     "trunk_a": 97.40155491904854,
      "energized": [
       true,
       true,
@@ -1124,12 +1084,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 542.5374641864464
+     "weighted_load_kw": 904.8571490385904
     },
     {
      "t": 1260.0,
      "action": null,
-     "trunk_a": 59.388908268823535,
+     "trunk_a": 95.3711166845374,
      "energized": [
       true,
       true,
@@ -1144,12 +1104,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 533.0627640840152
+     "weighted_load_kw": 876.0538229040086
     },
     {
      "t": 1290.0,
      "action": null,
-     "trunk_a": 58.92612115842293,
+     "trunk_a": 93.81546097548008,
      "energized": [
       true,
       true,
@@ -1164,12 +1124,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 526.3236510499001
+     "weighted_load_kw": 854.0284703335974
     },
     {
      "t": 1320.0,
      "action": null,
-     "trunk_a": 58.59618741989428,
+     "trunk_a": 92.62309805032508,
      "energized": [
       true,
       true,
@@ -1184,12 +1144,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 521.5290272639816
+     "weighted_load_kw": 837.1836524843022
     },
     {
      "t": 1350.0,
      "action": null,
-     "trunk_a": 58.360858315516104,
+     "trunk_a": 91.70889445790004,
      "energized": [
       true,
       true,
@@ -1204,12 +1164,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 518.1168939992675
+     "weighted_load_kw": 824.2988574748229
     },
     {
      "t": 1380.0,
      "action": 5,
-     "trunk_a": 104.15935407734949,
+     "trunk_a": 172.6248208870626,
      "energized": [
       true,
       true,
@@ -1224,12 +1184,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 1051.656510344262
+     "weighted_load_kw": 1760.5431440642724
     },
     {
      "t": 1410.0,
      "action": null,
-     "trunk_a": 96.31288490061414,
+     "trunk_a": 159.89342231408614,
      "energized": [
       true,
       true,
@@ -1244,12 +1204,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 959.9342537529441
+     "weighted_load_kw": 1612.2053900325213
     },
     {
      "t": 1440.0,
      "action": null,
-     "trunk_a": 90.71033707485552,
+     "trunk_a": 150.01367897061442,
      "energized": [
       true,
       true,
@@ -1264,12 +1224,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 894.4845260784934
+     "weighted_load_kw": 1497.0342588697074
     },
     {
      "t": 1470.0,
      "action": null,
-     "trunk_a": 86.71444407241145,
+     "trunk_a": 142.34847197570807,
      "energized": [
       true,
       true,
@@ -1284,12 +1244,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 847.7816199763919
+     "weighted_load_kw": 1407.612172226633
     },
     {
      "t": 1500.0,
      "action": null,
-     "trunk_a": 83.86399775404227,
+     "trunk_a": 136.39996515903874,
      "energized": [
       true,
       true,
@@ -1304,12 +1264,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 814.4556221635546
+     "weighted_load_kw": 1338.1808712835232
     },
     {
      "t": 1530.0,
      "action": null,
-     "trunk_a": 81.83044576503715,
+     "trunk_a": 131.78275887328388,
      "energized": [
       true,
       true,
@@ -1324,12 +1284,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 790.6748526270142
+     "weighted_load_kw": 1284.2701347141387
     },
     {
      "t": 1560.0,
      "action": null,
-     "trunk_a": 80.3793773174571,
+     "trunk_a": 128.19822077619384,
      "energized": [
       true,
       true,
@@ -1344,12 +1304,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 773.7052185116657
+     "weighted_load_kw": 1242.4095936616793
     },
     {
      "t": 1590.0,
      "action": null,
-     "trunk_a": 79.34405671143753,
+     "trunk_a": 125.41504318356165,
      "energized": [
       true,
       true,
@@ -1364,12 +1324,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 761.5957999803458
+     "weighted_load_kw": 1209.905040946101
     },
     {
      "t": 1620.0,
      "action": null,
-     "trunk_a": 78.60522142664223,
+     "trunk_a": 123.25384364457334,
      "energized": [
       true,
       true,
@@ -1384,12 +1344,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 752.9545053932575
+     "weighted_load_kw": 1184.664797405548
     },
     {
      "t": 1650.0,
      "action": 6,
-     "trunk_a": 87.46077166930054,
+     "trunk_a": 139.7500484741902,
      "energized": [
       true,
       true,
@@ -1404,12 +1364,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 840.5445957001164
+     "weighted_load_kw": 1345.7483386855035
     },
     {
      "t": 1680.0,
      "action": null,
-     "trunk_a": 85.86598748959018,
+     "trunk_a": 136.42742439066896,
      "energized": [
       true,
       true,
@@ -1424,12 +1384,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 823.9619806570922
+     "weighted_load_kw": 1310.4233970029604
     },
     {
      "t": 1710.0,
      "action": null,
-     "trunk_a": 84.64551933839427,
+     "trunk_a": 133.76328479791448,
      "energized": [
       true,
       true,
@@ -1444,12 +1404,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 811.3168906408296
+     "weighted_load_kw": 1282.216852257463
     },
     {
      "t": 1740.0,
      "action": null,
-     "trunk_a": 83.7113184106043,
+     "trunk_a": 131.63116316652673,
      "energized": [
       true,
       true,
@@ -1464,12 +1424,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 801.6599898545168
+     "weighted_load_kw": 1259.6811802197105
     },
     {
      "t": 1770.0,
      "action": null,
-     "trunk_a": 82.99525142315909,
+     "trunk_a": 129.92359885541285,
      "energized": [
       true,
       true,
@@ -1484,12 +1444,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 794.2746377561566
+     "weighted_load_kw": 1241.6659000820528
     },
     {
      "t": 1800.0,
      "action": null,
-     "trunk_a": 82.44563171093176,
+     "trunk_a": 128.55559890961285,
      "energized": [
       true,
       true,
@@ -1504,12 +1464,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 788.618857213737
+     "weighted_load_kw": 1227.2560703376942
     },
     {
      "t": 1830.0,
      "action": null,
-     "trunk_a": 82.02338520397113,
+     "trunk_a": 127.45863614474987,
      "energized": [
       true,
       true,
@@ -1524,12 +1484,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 784.2820307989005
+     "weighted_load_kw": 1215.7236302741724
     },
     {
      "t": 1860.0,
      "action": null,
-     "trunk_a": 81.69849709183003,
+     "trunk_a": 126.57885446829788,
      "energized": [
       true,
       true,
@@ -1544,12 +1504,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 780.9525227770973
+     "weighted_load_kw": 1206.4888819201876
     },
     {
      "t": 1890.0,
      "action": null,
-     "trunk_a": 81.44833613192102,
+     "trunk_a": 125.8726675020952,
      "energized": [
       true,
       true,
@@ -1564,12 +1524,12 @@
      "trip": false,
      "t_hospital": null,
      "t_critical": null,
-     "weighted_load_kw": 778.3934220590975
+     "weighted_load_kw": 1199.0899813967217
     },
     {
      "t": 1920.0,
      "action": 7,
-     "trunk_a": 111.4682532212862,
+     "trunk_a": 183.42841415229097,
      "energized": [
       true,
       true,
@@ -1584,7 +1544,7 @@
      "trip": false,
      "t_hospital": 32.0,
      "t_critical": 32.0,
-     "weighted_load_kw": 1278.8619102183295
+     "weighted_load_kw": 2153.234302018553
     }
    ]
   },
@@ -1592,9 +1552,9 @@
    "name": "priority PPO",
    "trip": false,
    "restored": true,
-   "final_t": 240.0,
+   "final_t": 360.0,
    "minutes_to_hospital": 0.5,
-   "minutes_to_critical_all": 2.5,
+   "minutes_to_critical_all": 5.5,
    "archetypes": [
     "school",
     "residential",
@@ -1660,7 +1620,7 @@
     {
      "t": 30.0,
      "action": 7,
-     "trunk_a": 29.949834939531087,
+     "trunk_a": 57.31379797179239,
      "energized": [
       false,
       false,
@@ -1675,12 +1635,12 @@
      "trip": false,
      "t_hospital": 0.5,
      "t_critical": null,
-     "weighted_load_kw": 502.4375768221911
+     "weighted_load_kw": 960.0755420024113
     },
     {
      "t": 60.0,
      "action": 4,
-     "trunk_a": 49.09203371726449,
+     "trunk_a": 94.35785226886996,
      "energized": [
       false,
       false,
@@ -1695,19 +1655,19 @@
      "trip": false,
      "t_hospital": 0.5,
      "t_critical": null,
-     "weighted_load_kw": 784.5997854409179
+     "weighted_load_kw": 1503.6430491601286
     },
     {
      "t": 90.0,
-     "action": 5,
-     "trunk_a": 90.4969893110717,
+     "action": 3,
+     "trunk_a": 127.02308096106009,
      "energized": [
       false,
       false,
       false,
+      true,
+      true,
       false,
-      true,
-      true,
       false,
       true
      ],
@@ -1715,12 +1675,12 @@
      "trip": false,
      "t_hospital": 0.5,
      "t_critical": null,
-     "weighted_load_kw": 1249.3411573778933
+     "weighted_load_kw": 1839.3003149867175
     },
     {
      "t": 120.0,
-     "action": 3,
-     "trunk_a": 102.66115926707778,
+     "action": 5,
+     "trunk_a": 193.769182489479,
      "energized": [
       false,
       false,
@@ -1735,12 +1695,12 @@
      "trip": false,
      "t_hospital": 0.5,
      "t_critical": null,
-     "weighted_load_kw": 1378.991293289478
+     "weighted_load_kw": 2577.4467091080114
     },
     {
      "t": 150.0,
-     "action": 6,
-     "trunk_a": 100.01962784386377,
+     "action": null,
+     "trunk_a": 170.17208127684046,
      "energized": [
       false,
       false,
@@ -1748,43 +1708,123 @@
       true,
       true,
       true,
+      false,
+      true
+     ],
+     "n_energized": 4,
+     "trip": false,
+     "t_hospital": 0.5,
+     "t_critical": null,
+     "weighted_load_kw": 2280.6690827548496
+    },
+    {
+     "t": 180.0,
+     "action": 0,
+     "trunk_a": 179.42955146727994,
+     "energized": [
       true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
       true
      ],
      "n_energized": 5,
      "trip": false,
      "t_hospital": 0.5,
-     "t_critical": 2.5,
-     "weighted_load_kw": 1324.9392858384845
+     "t_critical": null,
+     "weighted_load_kw": 2189.249060344672
     },
     {
-     "t": 180.0,
-     "action": 1,
-     "trunk_a": 123.85558966297208,
+     "t": 210.0,
+     "action": 2,
+     "trunk_a": 212.51193538205527,
      "energized": [
-      false,
       true,
       false,
       true,
       true,
       true,
       true,
+      false,
       true
      ],
      "n_energized": 6,
      "trip": false,
      "t_hospital": 0.5,
-     "t_critical": 2.5,
-     "weighted_load_kw": 1432.8943907650184
+     "t_critical": null,
+     "weighted_load_kw": 2164.87687958044
     },
     {
-     "t": 210.0,
-     "action": 0,
-     "trunk_a": 129.42853074386247,
+     "t": 240.0,
+     "action": null,
+     "trunk_a": 192.75154770360618,
      "energized": [
+      true,
+      false,
+      true,
+      true,
       true,
       true,
       false,
+      true
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 0.5,
+     "t_critical": null,
+     "weighted_load_kw": 1998.1338225984528
+    },
+    {
+     "t": 270.0,
+     "action": null,
+     "trunk_a": 177.31043834889078,
+     "energized": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 0.5,
+     "t_critical": null,
+     "weighted_load_kw": 1869.6637780439519
+    },
+    {
+     "t": 300.0,
+     "action": null,
+     "trunk_a": 165.2563906775145,
+     "energized": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true
+     ],
+     "n_energized": 6,
+     "trip": false,
+     "t_hospital": 0.5,
+     "t_critical": null,
+     "weighted_load_kw": 1770.608171278178
+    },
+    {
+     "t": 330.0,
+     "action": 6,
+     "trunk_a": 174.06958532494264,
+     "energized": [
+      true,
+      false,
+      true,
       true,
       true,
       true,
@@ -1794,13 +1834,13 @@
      "n_energized": 7,
      "trip": false,
      "t_hospital": 0.5,
-     "t_critical": 2.5,
-     "weighted_load_kw": 1409.826934350434
+     "t_critical": 5.5,
+     "weighted_load_kw": 1874.8582536037186
     },
     {
-     "t": 240.0,
-     "action": 2,
-     "trunk_a": 148.5764661603833,
+     "t": 360.0,
+     "action": 1,
+     "trunk_a": 222.0913923612615,
      "energized": [
       true,
       true,
@@ -1814,15 +1854,15 @@
      "n_energized": 8,
      "trip": false,
      "t_hospital": 0.5,
-     "t_critical": 2.5,
-     "weighted_load_kw": 1421.6146973275236
+     "t_critical": 5.5,
+     "weighted_load_kw": 2173.775829900932
     }
    ]
   },
   {
    "name": "panic close",
-   "trip": false,
-   "restored": true,
+   "trip": true,
+   "restored": false,
    "final_t": 30.0,
    "minutes_to_hospital": 0.5,
    "minutes_to_critical_all": 0.5,
@@ -1891,7 +1931,7 @@
     {
      "t": 30.0,
      "action": null,
-     "trunk_a": 208.45945269671427,
+     "trunk_a": 382.56488986394373,
      "energized": [
       true,
       true,
@@ -1903,10 +1943,10 @@
       true
      ],
      "n_energized": 8,
-     "trip": false,
+     "trip": true,
      "t_hospital": 0.5,
      "t_critical": 0.5,
-     "weighted_load_kw": 2132.3492174096004
+     "weighted_load_kw": 3932.2505691595616
     }
    ]
   }

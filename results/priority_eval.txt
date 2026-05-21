@@ -2,8 +2,8 @@ Held-out scenarios: 500 (seeds 500000…500499)
 
 policy                      trip%   restore%  hosp%   min→hosp  min→crit  steps   peak A   
 -------------------------------------------------------------------------------------------
-greedy (segment order)      0.0     100.0     100     2.3       3.7       8.0     149      
-sequential d=8              0.0     100.0     100     16.5      29.7      64.0    116      
-priority policy_priority_s1 0.0     100.0     100     0.6       2.5       8.0     150      
-priority policy_priority_s2 0.0     100.0     100     0.6       2.5       8.0     150      
-priority policy_priority_s3 0.0     100.0     100     0.6       2.5       8.0     150      
+greedy (segment order)      97.8    2.2       97      2.2       3.7       7.5     258      
+sequential d=8              0.0     100.0     100     16.5      29.7      64.0    185      
+priority policy_priority_s1 8.4     91.6      100     1.5       5.0       13.4    223      
+priority policy_priority_s2 5.4     94.6      100     1.4       4.4       13.9    223      
+priority policy_priority_s3 3.0     97.0      100     1.4       4.9       15.4    218      
