@@ -1818,6 +1818,97 @@
      "weighted_load_kw": 1425.4139093928757
     }
    ]
+  },
+  {
+   "name": "panic close",
+   "trip": false,
+   "restored": true,
+   "final_t": 30.0,
+   "minutes_to_hospital": 0.5,
+   "minutes_to_critical_all": 0.5,
+   "archetypes": [
+    "school",
+    "bakery",
+    "elderly",
+    "water",
+    "hospital",
+    "warehouse",
+    "residential",
+    "pharmacy"
+   ],
+   "archetype_names": [
+    "School",
+    "Bakery + grocery cluster",
+    "Apartment block, elderly residents",
+    "District water pumping",
+    "Regional hospital",
+    "Light commercial / cold storage",
+    "Mixed residential block",
+    "Pharmacy cluster"
+   ],
+   "icons": [
+    "🏫",
+    "🍞",
+    "🏢",
+    "💧",
+    "🏥",
+    "🏬",
+    "🏘️",
+    "💊"
+   ],
+   "criticality": [
+    1.5,
+    3.5,
+    3.5,
+    4.5,
+    5.0,
+    1.0,
+    2.0,
+    3.0
+   ],
+   "hospital_segment": 4,
+   "steps": [
+    {
+     "t": 0.0,
+     "action": null,
+     "trunk_a": 0.0,
+     "energized": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "n_energized": 0,
+     "trip": false,
+     "t_hospital": null,
+     "t_critical": null,
+     "weighted_load_kw": 0.0
+    },
+    {
+     "t": 30.0,
+     "action": null,
+     "trunk_a": 190.98810969961,
+     "energized": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ],
+     "n_energized": 8,
+     "trip": false,
+     "t_hospital": 0.5,
+     "t_critical": 0.5,
+     "weighted_load_kw": 1999.4663279967228
+    }
+   ]
   }
  ]
 }

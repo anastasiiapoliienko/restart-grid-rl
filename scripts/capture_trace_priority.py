@@ -28,6 +28,63 @@ from restart.baselines import GreedyPolicy, SequentialPolicy
 from restart.archetypes import ARCHETYPES, CRITICAL_THRESHOLD
 
 
+def run_panic(env, seed):
+    """Operator-panic worst case: force-energize all 8 segments in a single step.
+
+    Represents pressing every breaker as fast as physically possible, ignoring
+    diversity restoration. Useful as a peak-headroom benchmark.
+    """
+    obs, info0 = env.reset(seed=seed)
+    archetypes = info0["archetype_keys"]
+    criticality = info0["criticality"]
+    icons = info0["archetype_icons"]
+    names = info0["archetype_names"]
+
+    steps = [{
+        "t": 0.0, "action": None, "trunk_a": float(env.trunk_amps_last),
+        "energized": [False]*env.N, "n_energized": 0, "trip": False,
+        "t_hospital": None, "t_critical": None, "weighted_load_kw": 0.0,
+    }]
+    # Force-energize everything, advance one ETP step, push to OpenDSS, read trunk
+    env.energized[:] = True
+    for i, pop in enumerate(env.populations):
+        pop.step(env.step_seconds, energized=True)
+    loads_kw = [pop.power_kw(True) for pop in env.populations]
+    env.feeder.set_state(loads_kw, [True]*env.N)
+    env.feeder.solve()
+    trunk_a = env.feeder.trunk_current_amps()
+    env.trunk_amps_last = trunk_a
+    env.steps_taken = 1
+    tripped = trunk_a > env.trip_amps
+    wkw = sum(kw * criticality[i] / 5.0 for i, kw in enumerate(loads_kw))
+    steps.append({
+        "t": float(env.step_seconds),
+        "action": None,
+        "trunk_a": float(trunk_a),
+        "energized": [True]*env.N,
+        "n_energized": env.N,
+        "trip": tripped,
+        "t_hospital": env.step_seconds / 60.0,
+        "t_critical": env.step_seconds / 60.0,
+        "weighted_load_kw": wkw,
+    })
+
+    return {
+        "name": "panic close",
+        "trip": tripped,
+        "restored": not tripped,
+        "final_t": float(env.step_seconds),
+        "minutes_to_hospital": env.step_seconds / 60.0,
+        "minutes_to_critical_all": env.step_seconds / 60.0,
+        "archetypes": archetypes,
+        "archetype_names": names,
+        "icons": icons,
+        "criticality": [float(c) for c in criticality],
+        "hospital_segment": int(info0["hospital_segment"]),
+        "steps": steps,
+    }
+
+
 def run_one(env, policy, seed, masked, name):
     obs, info0 = env.reset(seed=seed)
     if hasattr(policy, "reset"): policy.reset()
@@ -109,6 +166,7 @@ def main():
     runs.append(run_one(env, GreedyPolicy(env.N), args.seed, False, "greedy"))
     runs.append(run_one(env, SequentialPolicy(env.N, dwell_steps=8), args.seed, False, "sequential-d8"))
     runs.append(run_one(env, model, args.seed, True, "priority PPO"))
+    runs.append(run_panic(env, args.seed))
 
     payload = {
         "seed": args.seed,
